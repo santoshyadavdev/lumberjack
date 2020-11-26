@@ -1,3 +1,4 @@
+import { Injectable } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 
 import {
@@ -7,12 +8,12 @@ import {
   createWarningLog,
   resolveDependency,
 } from '@internal/test-util';
+import { LumberjackTimeService } from '@ngworker/lumberjack/testing';
 
 import { LumberjackLogOptions } from '../configs';
 import { LumberjackLog } from '../lumberjack-log';
 import { LumberjackLogLevel } from '../lumberjack-log-levels';
 import { LumberjackModule } from '../lumberjack.module';
-import { LumberjackTimeService } from '../time/lumberjack-time.service';
 
 import { LumberjackFormatter } from './lumberjack-formatter.service';
 
@@ -23,6 +24,7 @@ function createFormatErrorLog(formatterErrorMessage: string, logEntry: Lumberjac
   );
 }
 
+@Injectable()
 class FakeTimeService extends LumberjackTimeService {
   private now = new Date();
 

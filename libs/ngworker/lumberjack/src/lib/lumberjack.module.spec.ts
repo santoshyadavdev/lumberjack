@@ -1,6 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { expectNgModuleToBeGuarded, resolveDependency } from '@internal/test-util';
+import { LumberjackTimeService } from '@ngworker/lumberjack/testing';
 
 import { LogDriverConfig, logDriverConfigToken, LumberjackLogConfig, lumberjackLogConfigToken } from './configs';
 import { defaultDevelopmentLevels } from './configs/default-development-levels';
@@ -11,7 +12,6 @@ import { utcTimestampFor } from './formatting/utc-timestamp-for';
 import { LumberjackLog } from './lumberjack-log';
 import { LumberjackLogLevel } from './lumberjack-log-levels';
 import { LumberjackModule } from './lumberjack.module';
-import { LumberjackTimeService } from './time/lumberjack-time.service';
 
 describe(LumberjackModule.name, () => {
   it(`cannot be imported without using the ${LumberjackModule.forRoot.name} method`, () => {

@@ -1,4 +1,5 @@
-import { LumberjackLogEntryLevel, LumberjackLogLevel, LumberjackTimeService } from '@ngworker/lumberjack';
+import { LumberjackLogEntryLevel, LumberjackLogLevel } from '@ngworker/lumberjack';
+import { LumberjackTimeService } from '@ngworker/lumberjack/testing';
 
 import { resolveDependency } from '../resolve-dependency';
 

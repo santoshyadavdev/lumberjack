@@ -1,12 +1,13 @@
 import { Inject, Injectable, Optional } from '@angular/core';
 
+import { LumberjackTimeService } from '@ngworker/lumberjack/testing';
+
 import { LumberjackFormatter } from './formatting/lumberjack-formatter.service';
 import { LogDriver, logDriverToken } from './log-drivers';
 import { DriverError } from './log-drivers/driver-error';
 import { LumberjackLog } from './lumberjack-log';
 import { LumberjackLogEntryLevel, LumberjackLogLevel } from './lumberjack-log-levels';
 import { LumberjackRootModule } from './lumberjack-root.module';
-import { LumberjackTimeService } from './time/lumberjack-time.service';
 
 /**
  * Service responsible to add logs to the applications.

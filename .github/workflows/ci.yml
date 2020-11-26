@@ -147,6 +147,7 @@ jobs:
       - run: yarn install
 
       - run: yarn delete-path-alias @ngworker/lumberjack
+      - run: yarn delete-path-alias @ngworker/lumberjack/testing
       - run: yarn delete-path-alias @ngworker/lumberjack/*-driver
       - uses: actions/download-artifact@v2
         with:
@@ -190,6 +191,7 @@ jobs:
       - run: yarn install
 
       - run: yarn delete-path-alias @ngworker/lumberjack
+      - run: yarn delete-path-alias @ngworker/lumberjack/testing
       - run: yarn delete-path-alias @ngworker/lumberjack/*-driver
       - uses: actions/download-artifact@v2
         with:

@@ -20,6 +20,7 @@
       "@internal/test-util": ["libs/internal/test-util/src/index.ts"],
       "@internal/console-driver/test-util": ["libs/internal/console-driver/test-util/src/index.ts"],
       "@ngworker/lumberjack": ["libs/ngworker/lumberjack/src/index.ts"],
+      "@ngworker/lumberjack/testing": ["libs/ngworker/lumberjack/testing/src/index.ts"],
       "@ngworker/lumberjack/*-driver": ["libs/ngworker/lumberjack/*-driver/src/index.ts"]
     }
   },

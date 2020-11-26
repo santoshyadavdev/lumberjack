@@ -350,7 +350,8 @@ The `LumberjackLogger` service is an abstract class that wraps the `LumberjackSe
 This is the abstract interface of `LumberjackLogger`:
 
 ```ts
-import { LumberjackService, LumberjackTimeService } from '@ngworker/lumberjack';
+import { LumberjackService } from '@ngworker/lumberjack';
+import { LumberjackTimeService } from '@ngworker/lumberjack/testing';
 
 export abstract class LumberjackLogger {
   constructor(lumberjack: LumberjackService, time: LumberjackTimeService) {}
